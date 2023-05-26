@@ -1,6 +1,16 @@
-.dashboard{
-    .container{
-        display: grid;
-        grid-template-columns: 280px auto;
+.dashboard {
+  .container {
+    display: grid;
+    grid-template-columns: 280px auto;
+  }
+  .bottom {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img{
+      height: 20rem;
     }
+  }
 }
