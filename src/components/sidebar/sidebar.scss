@@ -1,0 +1,41 @@
+.sidebar {
+  background-color: #db587f;
+  color: white;
+  height: 100vh;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .logo {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .menu {
+    margin-top: 200px;
+    overflow: auto;
+    height: 370px;
+
+    div {
+      width: 215px;
+      height: 35px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    div:hover {
+      background-color: #d47b96;
+    }
+  }
+  .menu::-webkit-scrollbar {
+    background-color: transparent;
+  }
+}
