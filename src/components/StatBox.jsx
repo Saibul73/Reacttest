@@ -6,7 +6,7 @@ const StatBox = ({ title, subtitle, icon, progress }) => {
 const theme = useTheme()
   return (
     <Box width="100%" m="0 30px">
-      <Box display="flex" justifyContent="space-between">
+      <Box display="flex" justifyContent="space-around">
         <Box>
           {icon}
           <Typography
