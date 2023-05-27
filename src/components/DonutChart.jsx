@@ -1,7 +1,7 @@
 import { Doughnut } from "react-chartjs-2";
-import { Chart, ArcElement } from "chart.js";
+import { Chart, ArcElement ,Legend,Tooltip} from "chart.js";
 
-Chart.register(ArcElement);
+Chart.register(ArcElement,Legend,Tooltip);
 
 const data = {
   labels: ["Donation", "Rent", "Miscellaneous", "Book Sale", "Uniform Sale"],
@@ -36,6 +36,7 @@ export const DonutChart = () => {
         options={{
           plugins: {
             legend: {
+              display:true,  
               position: "top",
             },
             tooltip: {

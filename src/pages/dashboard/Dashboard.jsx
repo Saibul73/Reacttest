@@ -21,6 +21,7 @@ function Dashboard() {
           <Sidebar />
         </div>
         <div className="right">
+            <p>Dashboard Status</p>
           <div className="top">
             {/* se1 */}
             <Box

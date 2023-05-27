@@ -3,6 +3,18 @@
     display: grid;
     grid-template-columns: 280px auto;
   }
+  .right{
+
+    p{
+      color: #000000;
+      padding: 20px;
+      font-size: larger;
+      font-weight: 400;
+    }
+  }
+  .top{
+    width: 90%;
+  }
   .bottom {
     padding: 20px;
     display: flex;
