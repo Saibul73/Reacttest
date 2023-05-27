@@ -8,10 +8,11 @@ import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import TrafficIcon from "@mui/icons-material/Traffic";
 import { BarChart } from "../../components/BarChart";
-import  halfpie from '../../assets/images/download.png'
+import halfpie from "../../assets/images/download.png";
+import { DonutChart } from "../../components/DonutChart";
 
 function Dashboard() {
-  const colors = '#db587f';
+  const colors = "#db587f";
   return (
     <div className="dashboard">
       <div className="container">
@@ -68,7 +69,7 @@ function Dashboard() {
               </Box>
               <Box
                 gridColumn="span 3"
-                backgroundColor='transparent'
+                backgroundColor="transparent"
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
@@ -77,12 +78,16 @@ function Dashboard() {
                   title="0/7"
                   subtitle="Staff Present"
                   progress="0.30"
-                  icon={<PersonAddIcon sx={{ color:'#db587f', fontSize: "26px" }} />}
+                  icon={
+                    <PersonAddIcon
+                      sx={{ color: "#db587f", fontSize: "26px" }}
+                    />
+                  }
                 />
               </Box>
               <Box
                 gridColumn="span 3"
-                backgroundColor='transparent'
+                backgroundColor="transparent"
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
@@ -91,19 +96,23 @@ function Dashboard() {
                   title="17/51"
                   subtitle="Student Present"
                   progress="0.80"
-                  icon={<TrafficIcon sx={{ color: '#db587f', fontSize: "26px" }} />}
+                  icon={
+                    <TrafficIcon sx={{ color: "#db587f", fontSize: "26px" }} />
+                  }
                 />
               </Box>
             </Box>
           </div>
-          <div className="bottom">{/* se2 */}
-              <div>
-                <BarChart/>
-                </div>
-                <div>
-                  <p>Income May 2023</p>
-                  <img src={halfpie} alt="" />
-                </div>
+          <div className="bottom">
+            {/* se2 */}
+            <div>
+              <BarChart />
+            </div>
+            <div>
+              <p>Income May 2023</p>
+              {/* <img src={halfpie} alt="" /> */}
+              <DonutChart />
+            </div>
           </div>
         </div>
       </div>
